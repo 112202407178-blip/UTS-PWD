@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A12.2024.07178_SAILA_UTS</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Profil Mahasiswa UDINUS</h1>
+        <p class="mb-0">Universitas Dian Nuswantoro Semarang</p>
+    </header>
+
+    <!-- navigasi-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">UDINUS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profil">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biodata">Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <main class="container my-5">
+        <section id="profil" class="mb-5">
+            <div class="row align-items-center">
+                <!-- kolom foto -->
+                <div class="col-lg-4 col-md-12 text-center mb-4 mb-lg-0">
+                    <div class="card shadow-sm">
+                        <img src="profil.jpg.jpg" 
+                             class="card-img-top" 
+                             alt="Foto Profil Mahasiswa">
+                        <div class="card-body">
+                            <h5 class="card-title">Saila Dhiya Salsabila</h5>
+                            <p class="card-text text-muted text-center">A12.2024.07178</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kolom profil  -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0">Informasi Mahasiswa</h3>
+                        </div>
+                        <div class="card-body">
+                            <h4>Saila Dhiya Salsabila</h4>
+                            <p class="lead">Mahasiswa Program Studi Sistem Informasi</p>
+                            
+                            <div class="biodata-info">
+                                <p><strong>NIM:</strong> A12.2024.07178</p>
+                                <p><strong>Program Studi:</strong> Sistem Informasi S1</p>
+                                <p><strong>Fakultas:</strong> Fakultas Ilmu Komputer</p>
+                                <p><strong>Angkatan:</strong> 2024</p>
+                                <p><strong>Email:</strong> 112202407178@mhs.dinus.ac.id</p>
+                            </div>
+
+                            <!-- tombol interaktif-->
+                            <button id="btnPesan" class="btn btn-success mt-3">
+                                Tampilkan Pesan
+                            </button>
+
+                            <!-- tombol mode terang atau gelap -->
+                            <button id="btnMode" class="btn btn-outline-primary mt-3 ms-2">
+                                Mode Gelap
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- biodata -->
+        <section id="biodata" class="mb-5">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Biodata Singkat</h3>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Hai! Namaku Saila, 
+                        mahasiswa Sistem Informasi di Universitas Dian Nuswantoro (UDINUS) 
+                        dan saat ini sedang menempuh semester 3. 
+                        Aku tertarik dengan dunia teknologi, 
+                        terutama bagaimana sistem informasi bisa membantu mempermudah pekerjaan dan kehidupan sehari-hari.
+                         Menjadi bagian dari jurusan ini membuat aku semakin ingin memahami cara kerja teknologi dan bagaimana menerapkannya secara nyata.
+                    </p>
+                    <p>
+                        Di luar kegiatan kuliah, 
+                        aku suka menghabiskan waktu dengan membaca dan menonton. 
+                        Dua hal itu jadi caraku untuk rileks sekaligus belajar dari berbagai cerita dan sudut pandang baru. 
+                        Aku percaya bahwa setiap hal yang kita pelajari, baik dari buku maupun film, bisa memberikan inspirasi dan menambah cara pandang kita terhadap dunia.
+                    </p>
+                    <p>
+                        Selain itu, aku juga suka travelling dan menjelajahi alam. 
+                        Aku senang memperhatikan bagaimana dunia bekerja—dari hal kecil di sekitar sampai keindahan alam yang luas. 
+                        Buatku, setiap perjalanan bukan cuma tentang tempat yang dikunjungi, tapi juga tentang pengalaman, refleksi, dan cara baru untuk memahami kehidupan dari sisi yang berbeda.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="mb-5">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Kontak Saya</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mt-2">
+                        <!-- Instagram Card -->
+                        <div class="col-md-4 mb-3">
+                            <a href="https://instagram.com/jjvnec" class="contact-card card h-100" target="_blank">
+                                <div class="card-body text-center">
+                                    <i class="fab fa-instagram fs-1 mb-3"></i>
+                                    <h5 class="card-title">Instagram</h5>
+                                    <p class="card-text">@jjvnec</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- WhatsApp Card -->
+                        <div class="col-md-4 mb-3">
+                            <a href="https://wa.me/085876842722" class="contact-card card h-100" target="_blank">
+                                <div class="card-body text-center">
+                                    <i class="fab fa-whatsapp fs-1 mb-3"></i>
+                                    <h5 class="card-title">WhatsApp</h5>
+                                    <p class="card-text">+62 858-7684-2722</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Email Card -->
+                        <div class="col-md-4 mb-3">
+                            <a href="mailto:112202407178@mhs.dinus.ac.id" class="contact-card card h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope fs-1 mb-3"></i>
+                                    <h5 class="card-title">Email</h5>
+                                    <p class="card-text">112202407178@mhs.dinus.ac.id</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">&copy; 2025 Universitas Dian Nuswantoro - Saila Dhiya Salsabila</p>
+            <p class="mb-0">JL. Imam Bonjol No. 207 Semarang</p>
+            <p class="mb-0">Telp: 024-3575915, 024-3575916</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript Eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>

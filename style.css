@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #005BAC 0%, #004a8a 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Navigation Styling */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.nav-link:hover {
+    color: #005BAC !important;
+    transform: translateY(-2px);
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    border-radius: 6px 6px 0 0;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-header {
+    border-radius: 6px 6px 0 0 !important;
+    padding: 1rem 1.5rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Biodata Info Styling */
+.biodata-info p {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 0.5rem;
+}
+
+.biodata-info p:last-child {
+    border-bottom: none;
+}
+
+.biodata-info strong {
+    color: #005BAC;
+    min-width: 150px;
+    display: inline-block;
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 25px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#btnPesan {
+    background-color: #198754;
+    border: none;
+}
+
+#btnPesan:hover {
+    background-color: #157347;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 3rem;
+}
+
+section h3 {
+    font-weight: bold;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+section ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #198754;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+}
+
+footer p {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+/* animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* kontak card styling */
+.contact-card {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-card .fab,
+.contact-card .fas {
+    transition: all 0.3s ease;
+}
+
+.contact-card .fa-instagram{
+    background: linear-gradient(45deg,#405DE6 0%,#5851DB 25%,#833AB4 50%,#C13584 75%,#E1306C 90%,#FD1D1D 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.contact-card:hover .fa-instagram{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.contact-card:hover .fa-whatsapp {
+    color: #25D366;
+    transform: scale(1.2);
+}
+
+.contact-card:hover .fa-envelope {
+    color: #005BAC;
+    transform: scale(1.2);
+}
+
+body.dark-mode .contact-card {
+    background-color: #0f1724;
+    border-color: rgba(255,255,255,0.1);
+}
+
+body.dark-mode .contact-card:hover {
+    background-color: #162234;
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        margin-bottom: 1rem;
+    }
+    
+    .contact-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    .card-img-top {
+        height: 300px;
+    }
+    
+    .biodata-info strong {
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-top: 0.5rem !important;
+        margin-left: 0 !important;
+    }
+    
+    .card-img-top {
+        height: 250px;
+    }
+}
+
+/* dark mode styles */
+body.dark-mode {
+    background-color: #0b0f14;
+    color: #e6eef8;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode header {
+    background: linear-gradient(135deg, #0b1220 0%, #111827 100%);
+    color: #e6eef8;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .navbar-dark .navbar-nav .nav-link {
+    background-color: #0b1220 !important;
+}
+
+body.dark-mode .nav-link {
+    color: #e6eef8 !important;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #60a5fa !important;
+}
+
+body.dark-mode .card {
+    background-color: #0f1724;
+    color: #e6eef8;
+    box-shadow: 0 6px 20px rgba(2,6,23,0.6) !important;
+}
+
+body.dark-mode .card-header {
+    background-color: #071028 !important;
+    color: #e6eef8;
+}
+
+body.dark-mode .card-img-top {
+    filter: brightness(0.9);
+}
+
+body.dark-mode .biodata-info strong {
+    color: #60a5fa;
+}
+
+body.dark-mode footer {
+    background: linear-gradient(135deg, #071028 0%, #0b1220 100%);
+    color: #cfe8ff;
+}
+
+body.dark-mode .btn.btn-outline-light {
+    color: #e6eef8;
+    border-color: rgba(230,238,248,0.25);
+}
+
+.bg-primary {
+    background-color: #005BAC !important;
+}
+
+.text-primary {
+    color: #005BAC !important;
+}
+
+.btn-primary {
+    background-color: #005BAC !important;
+    border-color: #005BAC !important;
+}
+
+.btn-outline-primary {
+    color: #005BAC !important;
+    border-color: #005BAC !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #005BAC !important;
+    color: #fff !important;
+}
